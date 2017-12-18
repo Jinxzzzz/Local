@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>重置</title>
+	<script>
+		function back()
+		{
+			window.open("Untitled-2.html");
+			//alert(window.location)
+		}
+		</script>
+</head>
+
+<body>
+	<div id="header" style="background-color: aliceblue">
+		<h1 style="text-align: center">重置密码</h1>
+	</div>
+		<div class="block" style="text-align: center;height: 30px; width:1900px">
+			<label class="lable-line">邮箱:</label>
+			<input type="mailbox" id="input1" value="" class="input-text" onkeydown="check_enter(event)" /> 
+			<span id="tip_input1" class="tip">
+			</span>
+		</div>
+		<div class="block" style="text-align: center;height: 30px; width: 1885px">
+                        <label class="label-line">验证码:</label>
+                        <input type="Verification Code" id="input2" value="" class="input-text" autocomplete="new-Verification Code" onkeydown="check_enter(event)" /> 
+			<span id="tip_input2" class="tip">
+			</span>
+                    </div>
+		<div class="block"   
+			 style="text-align:center;height: 30px; width:1860px;">
+                        <label class="label-line" >输入密码:</label>
+			<input type="password" id="input3" value="" class="input-text" onkeydown="check_enter(event)" /> <span id="tip_input3" class="tip"></span>    
+                    </div>
+                    <div class="block" style="text-align: center ;height: 30px; width:1830px;">
+                        <label class="label-line">重新输入密码:
+						</label>
+                        <input type="newpassword" id="input4" value="" class="input-text" autocomplete="new-password" onkeydown="check_enter(event)" />
+						<span id="tip_input4" class="tip">
+							</span>
+						</div>
+						<div id="button" 
+							 style="text-align: center;height:200px;width:1900px;">
+
+		<button type="button" onclick="alert('修改成功')">确定</button>
+		<button type="button" onclick="alert('')">取消</button>
+		<button onClick="back()" id="back" type="submit">返回</button>
+		</div>
+</body>
+</html>

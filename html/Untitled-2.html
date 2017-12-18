@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录界面</title>
+	<script>
+		function jump1()
+		{
+			window.open("Untitled-5.html");
+			//alert(window.location)
+		}
+	</script>
+	<script>
+		function jump2()
+		{
+			window.open("Untitled-1.html");
+			//alert(window.location)
+		}
+	</script>
+</head>
+
+<body background="http://p0.ifengimg.com/pmop/2017/0715/5E2D0ECD7F2C468ADBA2319A00F65307EE61461F_size101_w400_h227.gif">
+
+		<div id="header" style="background-color: deepskyblue">
+		
+	<h1 style="text-align: center">欢迎</h1></div>
+		<div class="block"   
+			 style="text-align:center;height: 30px; width:1100px;">
+                        <label class="label-line" >用户名:</label>
+			<input type="text" id="input1" value="" class="input-text" onkeydown="check_enter(event)" /> <span id="tip_input1" class="tip">(<a href="Untitled-3.html" tabindex="-100" class="tb_right">找回账号</a>)</span>    
+                    </div>
+                    <div class="block"
+						 style="text-align: center;height: 30px; width:1100px;">
+                        <label class="label-line">密码：
+						</label>
+                        <input type="password" id="input2" value="" class="input-text" autocomplete="new-password" onkeydown="check_enter(event)" />
+						<span id="tip_input2" class="tip">
+							(<a href="Untitled-4.html" tabindex="-1" class="tb-right">忘记密码</a>)
+							</span>
+               
+		</div>
+	<div id="button" style="text-align: center ;height:200px;width:1000px;">
+
+	<button onClick="jump2()" id="jumpto1" type="submit">登录</button>
+	<button onClick="jump1()" id="jumpto2" type="submit">注册</button>
+		</div>
+</body>
+</html>

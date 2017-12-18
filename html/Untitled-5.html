@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+	<script>
+		function back()
+		{
+			window.open("Untitled-2.html");
+			//alert(window.location)
+		}
+		</script>
+</head>
+
+<body>
+	<div id="header" style="background-color: beige">
+		<h1 style="text-align: center;width: 1050px">注册新用户</h1>
+	</div>
+	<div class="block" style="text-align: center;height: 30px;width: 1000px">
+		<label class="label-line">注册邮箱：</label>
+		<input type="text" id="input1" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input1" class="tip"></span>
+	</div>
+	<div class="block" style="text-align: center;height:30px;width: 1000px">
+		<label class="label-line">手机号码：</label>
+		<input type="text" id="input2" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input2" class="tip"></span>
+	</div>
+	<div class="block" style="text-align: center;height: 30px;width: 1000px">
+		<label class="label-line">登陆名称：</label>
+		<input type="text" id="input3" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input3" class="tip"></span>
+	</div>
+	<div class="block" style="text-align: center;height: 30px;width: 935px">
+		<label class="label-line">显示名称（昵称）：</label>
+		<input type="text" id="input4" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input4" class="tip"></span>
+	</div>
+	<div class="block" style="text-align: center;height: 30px;width: 1030px">
+		<label class="label-line">密码：</label>
+		<input type="text" id="input5" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input5" class="tip"></span>
+	</div>
+	<div class="block" style="text-align: center;height:30px;width: 1000px">
+		<label class="label-line">确认密码：</label>
+		<input type="text" id="input6" value="" class="input-text"
+			   onkeydown="check_enter(event)"/>
+		<span id="tip_input6" class="tip"></span>
+	</div>
+	<div id="button" style="text-align: center ;height:300px;width:1000px;">
+
+		<button type="button" onclick="alert('注册成功')">确定</button>
+		<button type="button" onclick="alert('你放弃了注册')">取消</button>
+		<button onClick="back()" id="back" type="submit">返回</button>
+		</div>
+		</div>
+</body>
+</html>

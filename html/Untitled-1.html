@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>视屏播放</title>
+</head>
+	<body>
+<div style="text-align:center"> 
+  <button onclick="playPause()" >播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">普通</button>
+  <button onClick="back()">返回</button>
+  <br> 
+	<video id="video1" width="420">
+		<source src="https://hy.v.netease.com/2017/1124/327d5bc4a4be77c6d35788c71066084bqt.mp4" type="video/mp4">
+ </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+function back()
+		{
+			window.open("Untitled-2.html");
+			//alert(window.location)
+		}
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()
+{ 
+	myVideo.width=560; 
+} 
+
+	function makeSmall()
+{ 
+	myVideo.width=320; 
+} 
+
+	function makeNormal()
+{ 
+	myVideo.width=420; 
+} 
+</script> 
+
+</body> 
+</html>
